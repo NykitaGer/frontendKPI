@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+.navbar .logo,
+.navbar .cart {
+  background-color: #555;
+  padding: 10px;
+}
+.navbar .logo.logo,
+.navbar .cart.logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+.navbar .logo.cart,
+.navbar .cart.cart {
+  font-size: 14px;
+}
+.navbar .search {
+  flex: 1;
+  text-align: center;
+}
+.navbar .search input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+.container {
+  display: flex;
+  margin: 20px;
+}
+.container .left {
+  flex: 1;
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin-right: 10px;
+}
+.container .left .links {
+  border: 1px solid #ccc;
+  padding: 10px;
+  list-style: none;
+}
+.container .left .links li {
+  margin: 10px 0;
+}
+.container .left .links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.container .left .links a:hover {
+  text-decoration: underline;
+}
+.container .main {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container .main .box {
+  flex: 1 1 calc(25% - 10px);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+.container .main .box img {
+  max-width: 100%;
+  height: auto;
+}
+.container .main .box .name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.container .main .box .price {
+  font-size: 14px;
+  color: #888;
+  margin: 5px 0;
+}
+.container .main .box .buy {
+  margin-top: 10px;
+}
+.container .main .box .buy button {
+  padding: 5px 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container .main .box .buy button:hover {
+  background-color: #555;
+}

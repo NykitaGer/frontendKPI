@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e4f2f7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #2a4f6e;
+  color: white;
+}
+header img {
+  display: block;
+}
+header p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  flex: 1;
+  background-color: #d9f1fb;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.feature {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-width: 300px;
+  background-color: #2a4f6e;
+  color: white;
+  margin-right: 30px;
+}
+
+.content {
+  display: flex;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+.subscribe input[type=email] {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+  max-width: 400px;
+  height: 50px;
+}
+.subscribe button {
+  padding: 0 20px;
+  font-size: 16px;
+  background-color: #2a4f6e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe button:hover {
+  background-color: #20425b;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  background-color: #2a4f6e;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 20px;
+}
+footer ul li {
+  margin: 5px 0;
+}
+
+/*# sourceMappingURL=maket5.css.map */

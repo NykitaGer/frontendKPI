@@ -1,0 +1,135 @@
+// Variables
+$primary-color: #2a4f6e;
+$secondary-color: #d9f1fb;
+$background-color: #e4f2f7;
+$text-color: white;
+$hover-color: #20425b;
+$border-color: #ccc;
+$font-size-base: 1.2em;
+$padding-base: 20px;
+$padding-small: 10px;
+$border-radius: 4px;
+
+// General Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $background-color;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// Header
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: $padding-base;
+  background-color: $primary-color;
+  color: $text-color;
+
+  img {
+    display: block;
+  }
+
+  p {
+    margin: 0;
+    font-size: $font-size-base;
+  }
+}
+
+// Main Content
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $padding-base;
+  flex: 1;
+  background-color: $secondary-color;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.feature {
+  text-align: center;
+  border: 1px solid $border-color;
+  padding: $padding-small;
+  max-width: 300px;
+  background-color: $primary-color;
+  color: $text-color;
+  margin-right: 30px;
+}
+
+.content {
+  display: flex;
+}
+
+// Subscribe Section
+.subscribe {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+
+  input[type="email"] {
+    padding: $padding-small 15px;
+    font-size: 16px;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    flex: 1;
+    max-width: 400px;
+    height: 50px; // Consistent height
+  }
+
+  button {
+    padding: 0 20px;
+    font-size: 16px;
+    background-color: $primary-color; // Deep blue for buttons
+    color: $text-color;
+    border: none;
+    cursor: pointer;
+    border-radius: $border-radius;
+    height: 50px; // Same height as input
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: $hover-color; // Slightly darker blue for hover
+    }
+  }
+}
+
+// Footer
+footer {
+  display: flex;
+  justify-content: center;
+  padding: $padding-base;
+  border-top: 1px solid $border-color;
+  background-color: $primary-color;
+  color: $text-color;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 20px;
+  }
+
+  ul li {
+    margin: 5px 0;
+  }
+}
